@@ -1,0 +1,14 @@
+Run and download in this order:
+
+Download ERA 5 (wind) here: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=form
+set lat/long in order to cover all cities (eg here eastern USA), download U and V composant of wind separatly, 
+and download by a interval of years (eg here 4years).
+
+Download STAGE IV (precipitation) by running download_STAGE_IV.R
+(here same interval of 4 years)
+
+Cut ERA 5 files by cities by running : cut_ERA5.R
+
+Then group the files with same type of data (U, V, precip) by running mergetime_ERA5_STAGE_IV.R
+
+Finally reproject STAGE IV data to be able to analyze it later by running reproject_STAGE_IV.R (not working but ok soon)  
