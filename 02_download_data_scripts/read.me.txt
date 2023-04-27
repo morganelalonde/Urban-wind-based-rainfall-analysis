@@ -5,10 +5,8 @@ set lat/long in order to cover all cities (eg here eastern USA), download U and 
 and download by a interval of years (eg here 4years).
 
 Download STAGE IV (precipitation) by running download_STAGE_IV.R
-(here same interval of 4 years)
+(here with interval of 4 years)
 
 Cut ERA 5 files by cities by running : cut_ERA5.R
 
 Then group the files with same type of data (U, V, precip) by running mergetime_ERA5_STAGE_IV.R
-
-Finally reproject STAGE IV data to be able to analyze it later by running reproject_STAGE_IV.R (not working but ok soon)  

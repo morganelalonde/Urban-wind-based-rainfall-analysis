@@ -27,10 +27,10 @@ for (i in 1:nrow(Cities)){
   files = paste0(Target_Dir,'/ST4_',Target_city,as.character(Start_Year),'_',as.character(End_Year),'.nc')
   system(paste("cdo -mergetime",paste(files,collapse = ' '), paste0(Target_Dir,'/ST4_',Target_city,'_2002_2021.nc')))
 
-  files = paste0(Target_Dir,'/ERA5_U_',Target_city,as.character(Start_Year),'_',as.character(End_Year),'.nc')
+  files = paste0(Target_Dir,'/ERA5_U_',Target_city,'_',as.character(Start_Year),'_',as.character(End_Year),'.nc')
   system(paste("cdo -mergetime",paste(files,collapse = ' '), paste0(Target_Dir,'/ERA5_U_',Target_city,'_2002_2021.nc')))
   
-  files = paste0(Target_Dir,'/ERA5_V_',Target_city,as.character(Start_Year),'_',as.character(End_Year),'.nc')
+  files = paste0(Target_Dir,'/ERA5_V_',Target_city,'_',as.character(Start_Year),'_',as.character(End_Year),'.nc')
   system(paste("cdo -mergetime",paste(files,collapse = ' '), paste0(Target_Dir,'/ERA5_V_',Target_city,'_2002_2021.nc')))
   
  }
